@@ -1,0 +1,71 @@
+/* 기본 리셋 */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: Arial, sans-serif; line-height: 1.6; }
+
+/* 헤더 */
+header {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 15px 30px; background: #0c2340; color: white;
+}
+.logo { font-size: 24px; font-weight: bold; text-decoration: none; color: white; }
+.logo span { color: #00aaff; }
+.nav-menu ul { list-style: none; display: flex; gap: 20px; }
+.nav-menu a { color: white; text-decoration: none; }
+.user-menu a { color: #ccc; margin-left: 10px; }
+
+/* 배너 */
+.main-banner {
+  background: #ddd;
+  min-height: 300px;   /* 텍스트 + 이미지 들어가도록 높이 자동 확장 */
+  display: flex;
+  flex-direction: column;  /* 텍스트 위, 이미지 아래 배치 */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+.main-banner h1 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+.main-banner .main-image {
+  max-width: 100%;   /* 화면 크기에 맞게 반응형 */
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+
+/* 강좌 */
+.courses { padding: 40px; background: #f9f9f9; }
+.courses h2 { margin-bottom: 20px; }
+.course-list { display: flex; gap: 20px; }
+.course-card {
+  font-weight: bold;   /* 굵게 */
+  font-size: 24px;     /* 크기 크게 */
+  flex: 1;
+  display: block;
+  padding: 20px;
+  background: white;
+  border: 1px solid #ddd;
+  text-align: center;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  text-decoration: none;
+  color: black;
+  transition: background 0.3s;
+}
+.course-card:hover {
+  background: #e0f7ff;
+  cursor: pointer;
+}
+
+/* 공지 & 이벤트 */
+.notice-event { display: flex; justify-content: space-around; padding: 40px; }
+.notice, .event { flex: 1; margin: 0 20px; }
+.notice h2, .event h2 { margin-bottom: 10px; }
+.notice ul, .event ul { list-style: none; }
+.notice a, .event a { text-decoration: none; color: #333; }
+.notice a:hover, .event a:hover { color: #00aaff; }
+
+/* 푸터 */
+footer { text-align: center; padding: 20px; background: #333; color: white; }
